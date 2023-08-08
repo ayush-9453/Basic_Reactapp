@@ -68,10 +68,14 @@ const spin=()=>{
         for(let j=0 ; j< Rows; j++){
             const randomIndex = Math.floor(Math.random()*reelSymbols.length);
             const selectedSymbol = reelSymbols[randomIndex];
+            reels[i].push(selectedSymbol)
+            reelSymbols.splice(randomIndex,1);
         }
     }
+    return reels;
 }
-spin();
+const reels = spin();
+console.log(reels);
 const balance = deposit();
 const numberOfLines = getNumberOflines();
 const numberbet = getBet(balance, numberOfLines);
