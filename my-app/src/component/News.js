@@ -18,29 +18,55 @@ export class News extends Component {
         },
         {
             "source": {
-                "id": "google-news-in",
-                "name": "Google News (India)"
+                "id": "bbc-news",
+                "name": "BBC News"
             },
-            "author": "IndiaTimes",
-            "title": "In a first, Indian submarine deployed all the way to Australia - IndiaTimes",
-            "description": null,
-            "url": "https://news.google.com/rss/articles/CBMieGh0dHBzOi8vbS50aW1lc29maW5kaWEuY29tL2luZGlhL2luLWEtZmlyc3QtaW5kaWFuLXN1Ym1hcmluZS1kZXBsb3llZC1hbGwtdGhlLXdheS10by1hdXN0cmFsaWEvYXJ0aWNsZXNob3cvMTAyODYxMjc3LmNtc9IBfGh0dHBzOi8vbS50aW1lc29maW5kaWEuY29tL2luZGlhL2luLWEtZmlyc3QtaW5kaWFuLXN1Ym1hcmluZS1kZXBsb3llZC1hbGwtdGhlLXdheS10by1hdXN0cmFsaWEvYW1wX2FydGljbGVzaG93LzEwMjg2MTI3Ny5jbXM?oc=5",
-            "urlToImage": null,
-            "publishedAt": "2023-08-19T14:25:00+00:00",
-            "content": null
+            "author": "BBC News",
+            "title": "Burnt-out shell of 1954 Ferrari fetches $2m at auction",
+            "description": "The legendary car was left untouched for decades until a hurricane blew the roof off a Florida barn.",
+            "url": "http://www.bbc.co.uk/news/world-us-canada-66563807",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/57F3/production/_130851522_gettyimages-1619719903.jpg",
+            "publishedAt": "2023-08-20T16:52:20.1081345Z",
+            "content": "The burnt-out shell of an old Ferrari racing car has sold at auction in the US for nearly $2m (£1.5m).\r\nIt caught fire during a race in the 1960s and was not touched for decades. \r\nIt was driven by F… [+851 chars]"
         },
         {
             "source": {
-                "id": "google-news-in",
-                "name": "Google News (India)"
+                "id": "bbc-news",
+                "name": "BBC News"
             },
-            "author": "NDTV",
-            "title": "India Imposes 40% Duty On Onion Exports As Prices Rise - NDTV",
-            "description": null,
-            "url": "https://news.google.com/rss/articles/CBMiX2h0dHBzOi8vd3d3Lm5kdHYuY29tL2luZGlhLW5ld3MvaW5kaWEtaW1wb3Nlcy00MC1kdXR5LW9uLW9uaW9uLWV4cG9ydHMtdGlsbC1kZWNlbWJlci0zMS00MzExNzE30gFlaHR0cHM6Ly93d3cubmR0di5jb20vaW5kaWEtbmV3cy9pbmRpYS1pbXBvc2VzLTQwLWR1dHktb24tb25pb24tZXhwb3J0cy10aWxsLWRlY2VtYmVyLTMxLTQzMTE3MTcvYW1wLzE?oc=5",
-            "urlToImage": null,
-            "publishedAt": "2023-08-19T13:13:37+00:00",
-            "content": null
+            "author": "BBC News",
+            "title": "Man disparages Pride flag, then kills shopkeeper in California",
+            "description": "The gunman is shot dead by US police, as Hollywood director Paul Feig pays tribute to the victim.",
+            "url": "http://www.bbc.co.uk/news/world-us-canada-66564605",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/0087/production/_130853100_gettyimages-1392171790.jpg",
+            "publishedAt": "2023-08-20T16:37:22.2798581Z",
+            "content": "A US shop owner was shot dead after a dispute over a Pride flag displayed outside her business, police say. \r\nLaura Ann Carleton, 66, was found with a bullet wound at her Mag Pi shop in Cedar Glen, C… [+2074 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Women's World Cup: Fans rejoice in Madrid as Spain makes football history",
+            "description": "As their team wins its first-ever World Cup in Sydney, supporters of women's football celebrate back home.",
+            "url": "http://www.bbc.co.uk/news/world-europe-66564318",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/1590F/production/_130853388_mediaitem130852282.jpg",
+            "publishedAt": "2023-08-20T16:37:20.467809Z",
+            "content": "\"Girl power!\" exclaimed one woman as the final whistle blew and the fan zone erupted into screams and tears of joy.\r\nThere were so many children and young people in the crowd, their faces painted in … [+1856 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "California braces for arrival of Hurricane Hilary",
+            "description": "Hurricane Hilary lashes Baja California state and is headed for the south-western US.",
+            "url": "http://www.bbc.co.uk/news/world-us-canada-66559623",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/6B85/production/_130852572_mediaitem130851435.jpg",
+            "publishedAt": "2023-08-20T14:52:22.1250978Z",
+            "content": "The US state of California is bracing itself for Hurricane Hilary, which is already bringing fierce winds and flooding to Mexico's Pacific coast.\r\nIt is lashing the Mexican state of Baja California w… [+2315 chars]"
         },
         {
             "source": {
@@ -68,15 +94,11 @@ export class News extends Component {
       <div className="container my-3">
         <h2>Top Headlines</h2>
           <div className="row">
-            <div className="col-md-4">
-            <NewsItems title="mytitle" description="hello" imgUrl="https://th.bing.com/th/id/OIP.p-aZsNRUiC7FilHb3hnEYgHaE8?pid=ImgDet&rs=1"/>
+          {this.state.articles.map((element)=>{
+            return <div className="col-md-4"  key={element.url}>
+            <NewsItems title={element.title.length >= 45 ? element.title.slice(0, 45) : element.title} description={element.description.length >= 60 ? element.description.slice(0, 60) : element.description} imgUrl={element.urlToImage} NewsUrl={element.url}/>
             </div>
-            <div className="col-md-4">
-            <NewsItems title="mytitle" description="hello"/>
-            </div>
-            <div className="col-md-4">
-            <NewsItems title="mytitle" description="hello"/>
-            </div>
+          })}
           </div>    
       </div>
     )
