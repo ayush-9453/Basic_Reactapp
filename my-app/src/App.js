@@ -1,4 +1,4 @@
-
+// adding a search box in the navbar 
 import './App.css';
 
 import React, { Component } from 'react'
@@ -10,7 +10,7 @@ export default class App extends Component {
     return (
       <div>
            <Navbar/>
-           <News/>
+           <News pageSize={6}/>
       </div>
     )
   }
