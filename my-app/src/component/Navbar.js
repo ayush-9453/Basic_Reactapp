@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export class Navbar extends Component {
     render() {
         return (
-            <div>
+            <>
                 <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
                     <div className="container-fluid">
                         <img src={kong} alt="kong" className='mx-2' />
@@ -22,7 +22,7 @@ export class Navbar extends Component {
                                     <Link className="nav-link" to="/">About</Link>
                                 </li>
                                 <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" to="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Catagories
                                     </a>
                                     <ul className="dropdown-menu">
@@ -46,7 +46,7 @@ export class Navbar extends Component {
                         </div>
                     </div>
                 </nav>
-            </div>
+            </>
         )
     }
 }
