@@ -11,7 +11,7 @@ const NewsItems =(props) =>{
                          <h5 className="card-title">{title}{/*<span class="badge bg-">{from}</span>*/}</h5> 
                         <p className="card-text">{description}</p>
                         <p className="card-text"><small className="text-body-secondary">By {author}</small></p>
-                        <p className="card-text"><small className="text-body-secondary">{new Date(date).toISOString()} </small></p>
+                        <p className="card-text"><small className="text-body-secondary">PublisedAt <span className='text-decoration-underline'>{new Date(date).toLocaleTimeString()}</span> </small></p>
                         <a rel='noreferrer' href={NewsUrl} target="_blank" className="btn btn-sm btn-primary">Read More</a>
                     </div>
                 </div>

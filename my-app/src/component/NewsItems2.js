@@ -13,7 +13,7 @@ export class NewsItems2 extends Component {
                             <div className="card-body">
                                 <h5 className="card-title">{title}</h5>
                                 <p className="card-text">{description}</p>
-                                <p className="card-text"><small className="text-body-secondary">Last updated 3 mins ago</small></p>
+                                <p className="card-text"><small className="text-body-secondary">By {author} At {new Date(date).toLocaleTimeString()} </small></p>
                                 <a rel='noreferrer' href={NewsUrl} target="_blank" className="btn btn-sm btn-primary">Read More</a>
                             </div>
                         </div>
