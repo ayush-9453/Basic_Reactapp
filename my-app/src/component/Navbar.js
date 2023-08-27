@@ -1,12 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
 import kong from './kong4.png'
 import { Link } from "react-router-dom";
 
-export class Navbar extends Component {
-    render() {
+const Navbar= ()=> {
+   
         return (
             <>
-                <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+                <nav className="navbar navbar-expand-lg fixed-top bg-body-tertiary" data-bs-theme="dark" >
                     <div className="container-fluid">
                         <img src={kong} alt="kong" className='mx-2' />
                         <Link className="navbar-brand" to="/">News</Link>
@@ -48,7 +48,6 @@ export class Navbar extends Component {
                 </nav>
             </>
         )
-    }
 }
 
 export default Navbar
