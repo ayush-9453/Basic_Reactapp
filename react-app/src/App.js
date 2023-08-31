@@ -1,28 +1,24 @@
 import React, { useState } from 'react';
-import './App.css'; // You can style your components using CSS
-
-const App = () => {
-  const [searchTerm, setSearchTerm] = useState('');
-
-  const handleSearch = (event) => {
-    setSearchTerm(event.target.value);
-
-  };
-
-  return (
-    <div className="app">
-      <h1>Search Example</h1>
-      <div className="search-box">
-        <input
-          type="text"
-          placeholder="Search..."
-          value={searchTerm}
-          onChange={handleSearch}
-        />
-      </div>
-      <p>Search Term: {searchTerm}</p>
+import { CssBaseline,Grid } from '@mui/material';
+import Header from './components/Header/Header';
+import List from './components/List/List';
+import Map from './components/Map/Map'
+import PlaceDetails from './components/PlaceDetails/PlaceDetails'
+const App =() =>{
+  return(
+    <div>
+      <CssBaseline/>
+      <Header/>
+      <Grid container spacing={3} style={{width:'100%'}}>
+        <Grid item xs={12} md={4}>
+          <List/>
+        </Grid>
+        <Grid item xs={12} md={8}>
+          <Map/>
+        </Grid>
+      </Grid>
     </div>
-  );
-};
+  )
+}
 
 export default App;
