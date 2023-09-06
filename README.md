@@ -1,3 +1,2 @@
 # javascript codes 
-DOM 
-promises
+This repository contains basic react application and project.
