@@ -4,11 +4,11 @@ function TopBar() {
   return (
     <div className="topbarContainer">
        <div className="topbarLeft">
-        <span className="logo">social</span>
+        <span className="logo">OnePices</span>
        </div>
        <div className="topbarCenter">
            <div className="serachbar">
-              <Search/>
+              <Search className="searchIcon"/>
               <input type="text" placeholder="search for friend,post or video" className="searchInput" />
            </div>
        </div>
