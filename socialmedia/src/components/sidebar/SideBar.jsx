@@ -69,7 +69,7 @@ const sidebar = () => {
           </li>
           <li className="sidebarFriend">
             <img src="./assets/person/5.jpg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Selena Gomez</span>
+            <span className="sidebarFriendName">I U</span>
           </li>
           <li className="sidebarFriend">
             <img src="./assets/person/6.jpg" alt="" className="sidebarFriendImg" />
@@ -77,7 +77,7 @@ const sidebar = () => {
           </li>
           <li className="sidebarFriend">
             <img src="./assets/person/8.jpg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">I U</span>
+            <span className="sidebarFriendName">Selena Gomez</span>
           </li>
           <li className="sidebarFriend">
             <img src="./assets/person/10.jpg" alt="" className="sidebarFriendImg" />
