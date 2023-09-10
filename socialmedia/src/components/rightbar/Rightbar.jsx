@@ -3,7 +3,7 @@ import React from 'react'
 const Rightbar = () => {
   return (
     <div className='rightbar'>
-           <div className="rightbarWrapper">
+       <div className="rightbarWrapper">
         <div className="birthdayContainer">
           <img className="bithdayImg" src="assets/giftbox.png" alt="" />
           <span className="birthdayText"><b>I U </b>and 3 other have there bithday today</span>       
@@ -16,7 +16,7 @@ const Rightbar = () => {
                 <img src="assets/person/3.jpg" className="rightbarProfileImg" alt="" />
                 <span className="rightOnline"></span>
               </div>
-              <span className="rightbarUsername"></span>
+              <span className="rightbarUsername">u i </span>
            </li>
         </ul>
       </div>
