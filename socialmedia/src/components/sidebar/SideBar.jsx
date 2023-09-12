@@ -8,6 +8,8 @@ import {RssFeed , Chat,
   WorkOutline,
   Event,
   School,} from "@mui/icons-material"
+  import { Users } from "../../dummyData";
+import CloseFriend from "../closeFriend/CloseFriend";
 
 
 const sidebar = () => {
@@ -55,38 +57,9 @@ const sidebar = () => {
         <button className="sidebarButton">Show More</button>
         <hr className="sidebarHr" />
         <ul className="sidebarFriendList">
-          <li className="sidebarFriend">
-            <img src="./assets/person/2.jpg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Jane Doe</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="./assets/person/3.jpg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Bae Suzy</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="./assets/person/4.jpg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Yoo-jung</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="./assets/person/5.jpg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">I U</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="./assets/person/6.jpg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Ji-Won</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="./assets/person/8.jpg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Selena Gomez</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="./assets/person/10.jpg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Song-Hye</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="./assets/person/11.jpg" alt="" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Ye-Jin</span>
-          </li>
+        {Users.map((u) => (
+            <CloseFriend key={u.id} user={u} />
+          ))}
         </ul>
       </div>
     </div>
