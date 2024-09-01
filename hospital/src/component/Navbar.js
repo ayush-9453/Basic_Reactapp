@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -24,16 +25,16 @@ const Navbar = () => {
         <div className="mt-8 max-w-6xl px-7 flex ">
           <div className="flex space-x-4">
             <button className="bg-purple-200 font-semibold hover:bg-purple-500 hover:text-white py-1 px-6 rounded-tl rounded-tr">
-              Hospitals (5)
+            <Link className="dropdown-item" to="/hospital">Hospitals (2) </Link>
             </button>
             <button className="bg-purple-200 hover:text-white hover:bg-purple-500 font-semibold px-6 py-1 rounded-tl rounded-tr">
-              Radiologists (15)
+            <Link className="dropdown-item" to="/Radiologists">Radiologists (15)</Link>
             </button>
             <button className="bg-purple-200 hover:text-white hover:bg-purple-500 font-semibold px-6 py-1 rounded-tl rounded-tr">
-              Technicians (5)
+            <Link className="dropdown-item" to="/technicial">Technicians (5) </Link>
             </button>
             <button className="bg-purple-200 hover:text-white hover:bg-purple-500 font-semibold  px-6 py-1 rounded-tl rounded-tr">
-              Reports (0)
+            <Link className="dropdown-item" to="/report">Reports (0) </Link>
             </button>
           </div>
         </div>
@@ -41,7 +42,7 @@ const Navbar = () => {
             <button
               id="dropdownDefaultButton"
               data-dropdown-toggle="dropdown"
-              class="text-white bg-green-500 hover:bg-green-600 rounded-lg text-sm font-semibold px-5 py-1 text-center inline-flex items-center"
+              className="text-white bg-green-500 hover:bg-green-600 rounded-lg text-sm font-semibold px-5 py-1 text-center inline-flex items-center"
               type="button"
             >
               +Add/Update User
