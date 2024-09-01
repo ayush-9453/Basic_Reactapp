@@ -1,15 +1,33 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect} from "react";
 import HospitalCard from "./HospitalCard";
 import data from './data.json';
 
 
-const HospitalList = () => {
-   
+const HospitalList = ({page}) => {
   const [hospitals, setHospitals] = useState([]);
+
   useEffect(() => {
-    setHospitals(data.HOSPITAL || []);
-    // setRadiologists(hospitalData.RADIOLOGISTS || []);
-  }, []);
+    // Adjust based on the `page` prop
+    const fetchData = () => {
+      switch(page) {
+        case 'HOSPITAL':
+          setHospitals(data.HOSPITAL || []);
+          break;
+        case 'RADIOLOGISTS':
+          setHospitals(data.RADIOLOGISTS || []);
+          break;
+        case 'TECHNICIAN':
+          setHospitals(data.TECHNICIAN || []);
+          break;
+        case 'REPORTS':
+          setHospitals(data.REPORTS || []);
+          break;
+        default:
+          setHospitals([]);
+      }
+    };
+    fetchData();
+  }, [page]);
 
 
 
@@ -17,9 +35,6 @@ const HospitalList = () => {
   return (
     <div className="mt-4 mr-4">
       <div className="grid grid-cols-2 gap-4">
-        {/* < HospitalCard name = 'Vishwaraj Hospital' email ='info@vrhpune.in' phone='35454236657' location='Loni Kalbhor' />
-        < HospitalCard name = 'Vishwaraj Hospital' email ='info@vrhpune.in' phone='35454236657' location='Loni Kalbhor' />
-        < HospitalCard name = 'Vishwaraj Hospital' email ='info@vrhpune.in' phone='35454236657' location='Loni Kalbhor' /> */}
         {hospitals.map(hospital => (
           <HospitalCard key={hospital.id} hospital={hospital} />
         ))}
